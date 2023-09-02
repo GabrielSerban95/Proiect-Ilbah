@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proiect Ilbah</title>
+
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- My Styles -->
+
+    <link rel="stylesheet" href="Main Page Styles/Header.css">
+    <link rel="stylesheet" href="Main Page Styles/General.css">
+    <link rel="stylesheet" href="Main Page Styles/Footer.css">
+    <link rel="stylesheet" href="Main Page Styles/Login.css">
+    <link rel="stylesheet" href="Main Page Styles/Signup.css">
+
+    
+
+</head>
+<body>
+
+
+    <!-- Header -> Navbar -->
+    <header class="top-side">
+        <nav class="navbar">
+        <div class="logo">
+            <a href=""><img class="logo-img" src="" alt="Logo"></a>
+        </div>
+            <div class="menu-bar">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div> 
+            </div>
+        
+            <ul class="menu" >
+                <li class="active" id="acasa">acasa</li>
+                <li id="preturi">preturi </i>
+                    <!-- <ul class="preturi">
+                        <li id="nunta">nunta</li>
+                        <li id="cununie-civila">cununie civila</li>
+                        <li id="botez">botez</li>
+                    </ul> -->
+                </li>
+                <li id="about">Despre Mine</li>
+            </ul>
+            
+
+            <!-- Butonul de logare -->
+            <button type="button" id="login" class="btn">Login</button>
+            
+
+            <!-- Formularul de login -->
+            <div id="loginform">
+                <form action="">
+                    <input type="text" name="cont" id="cont" placeholder="Cont" required>
+                    <input type="password" name="parola" id="parola" placeholder="Parola" required>
+
+                    <button type="submit" class="btn loginbtn" id="submit">Login</button>
+                </form>
+
+                <p>Nu ai cont? <a href="" id="sign-up">Inregistreaza-te</a></p>
+            </div>
+
+
+            <!-- Meniul Contului pentru fiecare tip de -->
+            <div id="tables">
+                <ul>
+                    <li><a href="">Cont</a></li>
+                    <li><a href="">Upload</a></li>
+                    <li><a href="">Sign Out</a></li>
+                </ul>
+            </div>
+
+            <div id="tables2">
+                <ul>
+                    <li><a href="">Cont</a></li>
+                    <li><a href="">Cumpara cutii</a></li>
+                    <li><a href="">Sign Out</a></li>
+                </ul>
+            </div>
+
+            <div id="tables3">
+                <ul>
+                    <li><a href="">Cont</a></li>
+                    <li><a href="">Galerie</a></li>
+                    <li><a href="">Sign Out</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Paginile incarcate cu iframe -->
+    <main>
+        <iframe src="pages/preturi.html" id="iframe" frameborder="0"></iframe>
+    </main>
+
+
+    <!-- Partea de jos care include si Icoanele de contact -->
+
+    <footer>
+        <div class="parteneri">
+            
+                <h2>Parteneri oficiali</h2>
+
+                <ul class="sponsors">
+                    <li><img src="Photos/logo-crafta.png" alt="crafta"></li>
+                    <li><img src="Photos/logo-stillmotion.png" alt="still-motion"></li>
+                </ul>
+
+
+                <h2>Featured</h2>
+                <ul class="sponsors">
+                    <li><img src="Photos/logo-mywed.png" alt="my-wed"></li>
+                    <li><img src="Photos/logo-prowed.png" alt="prowed"></li>
+                    <li><img src="Photos/logo-pinterest.png" alt="pinterest"></li>
+                    <li><img src="Photos/logo-wedday.png" alt="wedday"></li>
+                    <li><img src="Photos/logo-cameramani.png" alt="fotografi-cameramani"></li>
+                </ul>
+        </div>
+    </footer>
+
+    <div class="main-page-logo">
+        <img src="Photos/Laur.png" alt="">
+    </div>
+    <div class="contact">
+    
+        <h2 class="follow">Follow me on</h2>
+    
+        <ul class="social">
+            <li><a href="#" class="fa fa-facebook"></a></li>
+            <li><a href="#" class="fa fa-twitter"></a></li>
+            <li><a href="#" class="fa fa-instagram"></a></li>
+            <li><a href="#" class="fa fa-pinterest"></a></li>
+            <li><a href="tel:0729 711 211" class="fa fa-phone"></a></li>
+        </ul>
+    </div>
+
+
+
+    <!-- PopUp pentru Inregistrare -->
+    <div class="popup-signup">
+        <form action="">
+            <h2>Inregistrare</h2>
+
+
+            <input type="text" name="nume" id="nume" placeholder="Nume" required>
+
+            <input type="email" name="email" id="email" placeholder="E-mail" required>
+
+            <input type="password" id="sign-upPass" placeholder="Parola" required>
+
+            <input type="password" id="sign-upPass2" placeholder="Repeta parola" required>
+
+
+            <button type="submit" class="sign-up btn" id="sign-upBtn">Sign Up</button>
+        </form>
+    </div>
+
+
+
+
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/0dc63bcc16.js" crossorigin="anonymous"></script>
+
+    <!-- My scrypt -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="Scrypts/main.js"></script>
+
+
+</body>
+</html>

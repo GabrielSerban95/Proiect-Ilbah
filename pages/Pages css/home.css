@@ -1,0 +1,94 @@
+html::-webkit-scrollbar {
+    scrollbar-width: 0;
+    display: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 3rem 0;
+    position: relative;
+}
+
+.show {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-height: 7rem;
+
+}
+
+.card {
+    border-radius: 50%;
+    transition: all .5s ease-out;
+    overflow: hidden;
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.card:hover {
+    width: 20rem;
+    height: 10rem;
+    overflow: hidden;
+    background-color: rgb(245, 219, 185);
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+
+}
+
+.card img {
+    width: 7rem;
+    transition: all .1s;
+}
+
+.card:hover img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 0;
+
+}
+
+.card p {
+    opacity: 0;
+    padding: 1rem;
+}
+
+.card:hover p {
+    opacity: 1;
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+main img {
+    min-width: 100%;
+}
+
+main p {
+    text-align: center;
+    padding: 1rem;
+}
+
+
+@media (max-width:900) {
+    /* .show {} */
+
+}

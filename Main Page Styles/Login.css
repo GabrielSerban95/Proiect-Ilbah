@@ -1,0 +1,153 @@
+#loginform {
+    position: absolute;
+    width: 15rem;
+    height: 18rem;
+    background-color: whitesmoke;
+    right: 3rem;
+    top: 5rem;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#loginform form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#loginform form input {
+    padding: 5px;
+    border-radius: 30px;
+    border: none;
+    text-align: center;
+}
+
+
+.user {
+    padding: 1rem 2.5rem;
+    font-size: 1.3rem;
+    margin-right: 2rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.user::before {
+    content: '';
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    left: 0;
+    border-radius: 50%;
+    background-image: url("/Photos/bg-img.jpg");
+    background-size: 2rem;
+}
+
+#tables,
+#tables2,
+#tables3 {
+    position: absolute;
+    width: 11rem;
+    height: 15rem;
+    background-color: whitesmoke;
+    right: 2rem;
+    top: 4rem;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#tables ul,
+#tables2 ul,
+#tables3 ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    font-size: 1.3rem;
+    position: relative;
+}
+
+#tables ul li,
+#tables2 ul li,
+#tables3 ul li {
+    position: relative;
+}
+
+
+
+#tables li::after,
+#tables2 li::after,
+#tables3 li::after {
+    content: '';
+    background-color: black;
+    width: 120%;
+    height: 3px;
+    position: absolute;
+    left: -10%;
+    bottom: -5px;
+    transform: scale(0);
+    transform-origin: left;
+    transition: all .3s;
+}
+
+#tables li:hover::after,
+#tables li:hover::before,
+#tables2 li:hover::after,
+#tables2 li:hover::before,
+#tables3 li:hover::after,
+#tables3 li:hover::before {
+    transform: scale(1);
+}
+
+#tables li::before,
+#tables2 li::before,
+#tables3 li::before {
+    content: '';
+    background-color: black;
+    width: 120%;
+    height: 3px;
+    position: absolute;
+    left: -10%;
+    bottom: -5px;
+    transform: scale(0);
+    transform-origin: right;
+    transition: all .3s .1s;
+}
+
+
+#tables ul li a,
+#tables2 ul li a,
+#tables3 ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.loginbtn {
+    width: 100%;
+    margin-left: auto;
+}
+
+
+@media (max-width:768px) {
+
+    #tables,
+    #tables2,
+    #tables3 {
+        top: 6rem
+    }
+
+}
