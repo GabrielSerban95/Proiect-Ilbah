@@ -55,7 +55,6 @@ iframe {
 
 .shadow {
     background-color: #00000081;
-    /* transition: 1s; */
 }
 
 .visible {
@@ -86,7 +85,8 @@ ul {
     color: #000;
     cursor: pointer;
     box-shadow: 0 1px 5px black;
-
+    font-family: 'Pacifico', cursive;
+    ;
 }
 
 .btn:hover {
