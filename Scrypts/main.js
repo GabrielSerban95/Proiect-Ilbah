@@ -8,7 +8,7 @@ $(document).ready(function () {
         $("#iframe").attr("src", "pages/home.html");
     });
 
-    $("preturi").click(function () {
+    $("#preturi").click(function () {
         $("#iframe").attr("src", "pages/preturi.html");
     });
 
