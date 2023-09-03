@@ -22,7 +22,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     max-height: 7rem;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .card {
@@ -95,7 +95,7 @@ main p {
         margin: 1rem 2px 5rem;
         gap: 2rem;
         /* overflow: hidden; */
-        border: 1px solid red;
+        /* border: 1px solid red; */
         max-height: 15rem;
     }
 
@@ -106,5 +106,9 @@ main p {
         grid-template-columns: 1fr;
         z-index: 1;
         margin-left: -20px;
+    }
+
+    main h1 {
+        text-align: center;
     }
 }
