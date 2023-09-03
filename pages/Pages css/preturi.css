@@ -209,6 +209,18 @@ main {
         margin: 0 10px;
     }
 
+    .card {
+        width: 20rem;
+        height: 27rem;
+        font-size: .7rem;
+    }
+
+    .btn-poze,
+    .btn-filme,
+    .btn-reset,
+    .btn-video {
+        margin-left: 15%;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1880px) {

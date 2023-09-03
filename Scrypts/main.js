@@ -6,10 +6,18 @@ $(document).ready(function () {
 
     $("#acasa").click(function () {
         $("#iframe").attr("src", "pages/home.html");
+
     });
 
     $("#preturi").click(function () {
         $("#iframe").attr("src", "pages/preturi.html");
+
+        $("#iframe").on("load", function () {
+            var iframeBody = $(this).contents().find("body");
+            if (!iframeBody.hasClass("shadow")) {
+                iframeBody.addClass("shadow");
+            }
+        });
     });
 
 
