@@ -147,11 +147,24 @@
     #tables,
     #tables2,
     #tables3 {
-        top: 6rem
+        top: 4rem;
+        right: .5rem;
     }
 
     #loginform {
         right: 1rem;
         top: 4rem;
+    }
+
+    .user {
+        margin-right: .2rem;
+    }
+
+    .user::before {
+        width: 1.7rem;
+        height: 1.7rem;
+        background-size: 1.7rem;
+        top: 1.25rem;
+        left: .5rem;
     }
 }
