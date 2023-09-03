@@ -5,6 +5,7 @@ html::-webkit-scrollbar {
 }
 
 body {
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -21,7 +22,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     max-height: 7rem;
-
+    border: 1px solid red;
 }
 
 .card {
@@ -32,7 +33,6 @@ body {
     height: 7rem;
     display: flex;
     flex-direction: column;
-
 }
 
 
@@ -88,7 +88,23 @@ main p {
 }
 
 
-@media (max-width:900) {
-    /* .show {} */
+@media (max-width:768px) {
+    .show {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 1rem 2px 5rem;
+        gap: 2rem;
+        /* overflow: hidden; */
+        border: 1px solid red;
+        max-height: 15rem;
+    }
 
+
+    .card:hover {
+        height: 20rem;
+        width: 10rem;
+        grid-template-columns: 1fr;
+        z-index: 1;
+        margin-left: -20px;
+    }
 }

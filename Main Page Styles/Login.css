@@ -1,7 +1,7 @@
 #loginform {
     position: absolute;
-    width: 15rem;
-    height: 18rem;
+    max-width: 15rem;
+    max-height: 18rem;
     background-color: whitesmoke;
     right: 3rem;
     top: 5rem;
@@ -150,4 +150,8 @@
         top: 6rem
     }
 
+    #loginform {
+        right: 1rem;
+        top: 4rem;
+    }
 }
