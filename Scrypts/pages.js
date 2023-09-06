@@ -51,36 +51,61 @@ $(document).ready(function () {
             },
         },
     });
-});
 
 
-// JS pentru afisarea intr-un popup a imaginilor la click
 
-$('.pret-usb img').click(function () {
-    var imgSrc = $(this).attr('src');
+    // JS pentru afisarea intr-un popup a imaginilor la click pe pagina de comenzi
 
-    var popup = $('<div class="popup"></div>');
-    var img = $('<img src="' + imgSrc + '">');
+    $('.pret-usb img').click(function () {
+        var imgSrc = $(this).attr('src');
 
-    popup.append(img);
-    $('body').append(popup);
+        var popup = $('<div class="popup"></div>');
+        var img = $('<img src="' + imgSrc + '">');
 
-    popup.click(function () {
-        popup.remove();
+        popup.append(img);
+        $('body').append(popup);
+
+        popup.click(function () {
+            popup.remove();
+        });
     });
-});
 
-$('.cutii-produs img').click(function () {
-    var imgSrc = $(this).attr('src');
+    $('.cutii-produs img').click(function () {
+        var imgSrc = $(this).attr('src');
 
-    var popup = $('<div class="popup"></div>');
-    var img = $('<img src="' + imgSrc + '">');
+        var popup = $('<div class="popup"></div>');
+        var img = $('<img src="' + imgSrc + '">');
 
-    popup.append(img);
-    $('body').append(popup);
+        popup.append(img);
+        $('body').append(popup);
 
-    popup.click(function () {
-        popup.remove();
+        popup.click(function () {
+            popup.remove();
+        });
     });
+
+
+    // JS pentru marirea pozelor in galerie
+
+
+    // var images = $('.image');
+
+    // images.click(function () {
+    //     var imgSrc = $(this).find('img').attr('src');
+    //     var description = $(this).find('.description').text();
+    //     var count = images.index($(this)) + 1;
+
+
+    //     $('#popup-image').attr('src', imgSrc);
+    //     $('#popup-description').text(description);
+    //     $('#popup-count').text('Imagine ' + count + ' din ' + images.length);
+    //     $('#popup').fadeIn();
+    // });
+
+    // $('#popup').click(function () {
+    //     $(this).fadeOut();
+    // });
+
+
 });
 

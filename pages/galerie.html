@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="/pages/Pages css/galerie.css">
+    <link rel="stylesheet" href="/Main Page Styles/General.css">
+</head>
+<body>
+    <div class="gallery">
+        <div class="image">
+            <img src="/Photos/SlideShow1.jpg" alt="Imagine 1">
+            <span class="description">Imagine 1 - Descriere scurtă</span>
+        </div>
+        <div class="image">
+            <img src="/Photos/SlideShow2.jpg" alt="Imagine 2">
+            <span class="description">Imagine 2 - O altă descriere</span>
+        </div>
+        <div class="image">
+            <img src="/Photos/SlideShow3.jpg" alt="Imagine 2">
+            <span class="description">Imagine 2 - O altă descriere</span>
+        </div>
+        <div class="image">
+            <img src="/Photos/SlideShow4.jpg" alt="Imagine 2">
+            <span class="description">Imagine 2 - O altă descriere</span>
+        </div>
+        <div class="image">
+            <img src="/Photos/SlideShow5.jpg" alt="Imagine 2">
+            <span class="description">Imagine 2 - O altă descriere</span>
+        </div>
+        <div class="image">
+            <img src="/Photos/SlideShow6.jpg" alt="Imagine 2">
+            <span class="description">Imagine 2 - O altă descriere</span>
+        </div>
+        <div class="image">
+            <img src="/Photos/SlideShow7.jpg" alt="Imagine 2">
+            <span class="description">Imagine 2 - O altă descriere</span>
+        </div>
+        <div class="image">
+            <img src="/Photos/SlideShow8.jpg" alt="Imagine 2">
+            <span class="description">Imagine 2 - O altă descriere</span>
+        </div>
+    </div>
+
+    <div id="popup">
+        <img src="" alt="" id="popup-image">
+        <span id="popup-description"></span>
+        <span id="popup-count"></span>
+    </div>
+
+    
+    <!-- <script src="/Scrypts/pages.js"></script> -->
+    <script>
+        var images = $('.image');
+
+    images.click(function () {
+        var imgSrc = $(this).find('img').attr('src');
+        var description = $(this).find('.description').text();
+        var count = images.index($(this)) + 1;
+
+
+        $('#popup-image').attr('src', imgSrc);
+        $('#popup-description').text(description);
+        $('#popup-count').text('Imagine ' + count + ' din ' + images.length);
+        $('#popup').fadeIn();
+    }); 
+
+    $('#popup').click(function () {
+        $(this).fadeOut();
+    });
+    </script>
+</body>
+</html>
