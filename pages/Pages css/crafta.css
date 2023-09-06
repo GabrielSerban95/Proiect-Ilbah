@@ -1,0 +1,121 @@
+html::-webkit-scrollbar {
+    scrollbar-width: 0;
+    display: none;
+    scroll-behavior: smooth;
+}
+
+
+.cutii {
+    display: grid;
+    place-content: center;
+    border-bottom: 3px solid black;
+    padding: 3rem;
+    margin-bottom: 3rem;
+}
+
+.cutii-produs {
+    display: flex;
+    max-width: 43rem;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+    padding: 2rem 2rem;
+}
+
+.cutii-produs:not(:last-child) {
+    border-bottom: 2px solid black;
+}
+
+.cutii-produs img {
+    max-width: 20rem;
+    object-fit: contain;
+}
+
+.descriere,
+.descriere-usb {
+    display: grid;
+    text-align: center;
+    gap: 2rem;
+}
+
+.descriere p {
+    font-size: 2rem;
+}
+
+.descriere p sup {
+    font-size: 1.2rem;
+}
+
+.usb {
+    display: grid;
+    justify-content: center;
+    border-bottom: 3px solid black;
+    margin-bottom: 2rem;
+}
+
+.descriere-usb span {
+    padding: 2rem;
+    font-size: 1.2rem;
+}
+
+.preturi {
+    display: flex;
+    gap: 3rem;
+    margin: 2rem 0;
+    padding: 2rem;
+}
+
+.pret-usb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.pret-usb img {
+    max-width: 10rem;
+}
+
+.pret {
+    font-size: 1.5rem;
+}
+
+.comanda {
+    text-align: center;
+    padding: 5rem 0;
+}
+
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup img {
+    max-width: 100%;
+    max-height: 100%;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .cutii-produs {
+        flex-direction: column;
+    }
+
+    .descriere-usb span {
+        display: grid;
+    }
+
+    .preturi {
+        display: grid;
+    }
+}
