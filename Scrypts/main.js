@@ -21,6 +21,18 @@ $(document).ready(function () {
         });
     });
 
+    $("#shop").click(function () {
+        $("#iframe").attr("src", "pages/crafta.html");
+
+
+        $("#iframe").on("load", function () {
+            var iframeBody = $(this).contents().find("body");
+            if (!iframeBody.hasClass("shadow") && $(window).width() < 768) {
+                iframeBody.addClass("shadow");
+            }
+        });
+    });
+
 
 
 

@@ -1,4 +1,7 @@
 $(document).ready(function () {
+
+
+    // JS pentru intoarcerea cartonaselor
     $(".btn-poze").click(function () {
         $(this).parents(".card-inner").toggleClass("flipped");
         $(".card-back-fotografii").show();
@@ -51,4 +54,33 @@ $(document).ready(function () {
 });
 
 
+// JS pentru afisarea intr-un popup a imaginilor la click
+
+$('.pret-usb img').click(function () {
+    var imgSrc = $(this).attr('src');
+
+    var popup = $('<div class="popup"></div>');
+    var img = $('<img src="' + imgSrc + '">');
+
+    popup.append(img);
+    $('body').append(popup);
+
+    popup.click(function () {
+        popup.remove();
+    });
+});
+
+$('.cutii-produs img').click(function () {
+    var imgSrc = $(this).attr('src');
+
+    var popup = $('<div class="popup"></div>');
+    var img = $('<img src="' + imgSrc + '">');
+
+    popup.append(img);
+    $('body').append(popup);
+
+    popup.click(function () {
+        popup.remove();
+    });
+});
 
