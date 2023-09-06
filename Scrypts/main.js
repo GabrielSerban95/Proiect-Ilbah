@@ -21,7 +21,8 @@ $(document).ready(function () {
         });
     });
 
-    $("#shop").click(function () {
+    $("#shop").click(function (event) {
+        event.preventDefault()
         $("#iframe").attr("src", "pages/crafta.html");
 
 
@@ -33,7 +34,8 @@ $(document).ready(function () {
         });
     });
 
-    $("#gallery").click(function () {
+    $("#gallery").click(function (event) {
+        event.preventDefault()
         $("#iframe").attr("src", "pages/galerie.html");
 
 
@@ -44,6 +46,7 @@ $(document).ready(function () {
             }
         });
     });
+
 
 
 
