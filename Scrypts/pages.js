@@ -21,7 +21,7 @@ $(document).ready(function () {
     var swiper = new Swiper(".slider-content", {
         slidesPerView: 3,
         spaceBetween: 30,
-        loop: true,
+        loop: 'true',
         centeredSlide: 'true',
         fade: 'true',
         grabCursor: 'true',

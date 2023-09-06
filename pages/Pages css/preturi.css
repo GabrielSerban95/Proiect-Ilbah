@@ -14,17 +14,20 @@ html::-webkit-scrollbar {
 
 body {
     display: flex;
-    place-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
 }
 
 
 main {
-    width: 80%;
+    max-width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 2rem;
 }
 
@@ -187,8 +190,48 @@ main {
     background-color: rgb(0, 60, 255);
 }
 
+/* ........................................... */
+/* ...       Customizare preturi           ... */
+/* ........................................... */
 
+.customizare-preturi {
+    width: 90%;
+    border-top: 2px dotted black;
+    margin-bottom: 3rem;
+}
 
+.servicii-preferate {
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem auto;
+}
+
+.servicii-preferate h4 {
+    font-weight: 500;
+}
+
+.preturi-servicii {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.servicii {
+    display: grid;
+    gap: .2rem;
+    font-size: .8rem;
+    text-decoration: none;
+}
+
+.nume-serviciu {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.descriere-serviciu {
+    font-weight: 500;
+}
 
 
 /* ........................................... */
@@ -207,12 +250,14 @@ main {
 
     .slider-content {
         margin: 0 10px;
+        min-width: 20rem;
     }
 
     .card {
         width: 20rem;
         height: 27rem;
         font-size: .7rem;
+        margin: auto;
     }
 
     .btn-poze,
@@ -220,6 +265,11 @@ main {
     .btn-reset,
     .btn-video {
         margin-left: 15%;
+    }
+
+    .preturi-servicii {
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -229,7 +279,12 @@ main {
     }
 }
 
-
+@media (max-width:1261px) {
+    .preturi-servicii {
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        gap: 1rem;
+    }
+}
 
 
 .flipped {
